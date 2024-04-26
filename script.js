@@ -7,6 +7,7 @@ const msg= document.querySelector("#res");
 let you=document.getElementById("userScore");
 let botPt=document.getElementById("botScore");
 let bot= document.getElementById("bot");
+let p= document.getElementById("p");
 
 const genBotChoice = ()=>{
     const opt=["rock","paper","scissors"];
@@ -14,15 +15,15 @@ const genBotChoice = ()=>{
    
     if (randomIdx==0) {
         bot.src="img/rock.png";
-        bot.innerText="ROCK!";
+        p.innerText="ROCK";
     }
     if (randomIdx==1) {
         bot.src="img/paper.png";
-        bot.innerText="PAPER!";
+        p.innerText="PAPER";
     }
     if (randomIdx==2) {
         bot.src="img/scissors.png";
-        bot.innerText="SCISSORS";
+        p.innerText="SCISSORS";
     }
     
     console.log(bot);
@@ -38,7 +39,7 @@ const winner=(userWin)=>{
     if (userWin) {
         console.log("You Won!");
         msg.innerText="You Won!";
-        userScore+=1;
+        userScore++;
         console.log(userScore);
         console.log(botScore);
         you.innerText=userScore;
@@ -47,7 +48,7 @@ const winner=(userWin)=>{
     }else{
         console.log("You Lose!");
         msg.innerText="You Lose!";
-        botScore+=1;
+        botScore++;
         console.log(userScore);
         console.log(botScore);
         botPt.innerText=botScore;
@@ -86,4 +87,5 @@ choices.forEach((choice)=>{
 
 bot.addEventListener("click",()=>{
     bot.src="img/bot.png";
+    p.innerText="We Can Play More!";
 })

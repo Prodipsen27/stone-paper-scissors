@@ -42,7 +42,7 @@ img{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-top: 2rem;
+    margin: 27px;
     flex-wrap: wrap;
 }
 
@@ -52,11 +52,11 @@ img{
     padding: 2rem;
     font-size: 2rem;
     gap: 10rem;
-    margin: 2rem;
+    margin: 20px;
 }
 
 #userScore, #botScore{
-    font-size: 50px;
+    font-size: 30pxpx;
 }
 
 #res{
@@ -67,6 +67,7 @@ img{
     display: inline-flex;
     padding: 1rem;
     border-radius: 20%;
+    margin-top: 5px;
 }
 
 #bot{
@@ -80,4 +81,5 @@ img{
 #p{
     font-size: 27px;
     padding: 5px;
+    margin: 15px;
 }
