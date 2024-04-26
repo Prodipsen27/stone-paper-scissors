@@ -6,6 +6,7 @@ const choices= document.querySelectorAll(".choice");
 const msg= document.querySelector("#res");
 let you=document.getElementById("userScore");
 let botPt=document.getElementById("botScore");
+let bot= document.getElementById("bot");
 
 const genBotChoice = ()=>{
     const opt=["rock","paper","scissors"];
@@ -13,12 +14,15 @@ const genBotChoice = ()=>{
    
     if (randomIdx==0) {
         bot.src="img/rock.png";
+        bot.innerText="ROCK!";
     }
     if (randomIdx==1) {
         bot.src="img/paper.png";
+        bot.innerText="PAPER!";
     }
     if (randomIdx==2) {
         bot.src="img/scissors.png";
+        bot.innerText="SCISSORS";
     }
     
     console.log(bot);
@@ -49,7 +53,7 @@ const winner=(userWin)=>{
         botPt.innerText=botScore;
     }
 };
-let bot= document.getElementById("bot");
+
 
 const playGame=(userChoice)=>{
     console.log("User: ",userChoice);
