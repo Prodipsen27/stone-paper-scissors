@@ -12,7 +12,7 @@ body{
 h1{
     background-color: rgba(255, 179, 80, 0.76);
     color: aliceblue;
-    height: 5rem;
+    padding: 20px;
     line-height: 5rem;
     border-radius: 7%;
 }
