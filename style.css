@@ -3,6 +3,7 @@
     padding: 0;
     text-align: center;
 }
+
 body{
     background-color: rgba(154, 206, 255, 0.755);
     margin: 8px;
@@ -35,8 +36,6 @@ img{
     height: 150px;
     object-fit: cover;
     border-radius: 27%;
-   
-
 }
 
 .choices{
@@ -81,10 +80,4 @@ img{
 #p{
     font-size: 27px;
     padding: 5px;
-}
-.bg{
-    
-    
-    
-    
 }
