@@ -44,6 +44,7 @@ img{
     align-items: center;
     gap: 2rem;
     margin-top: 2rem;
+    flex-wrap=wrap;
 }
 
 .scoreBoard{
