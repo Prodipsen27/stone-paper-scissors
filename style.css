@@ -12,7 +12,8 @@ body{
 h1{
     background-color: rgba(255, 179, 80, 0.76);
     color: aliceblue;
-    padding: 20px;
+    height: 5rem;
+    line-height: 5rem;
     border-radius: 7%;
 }
 
@@ -43,7 +44,6 @@ img{
     align-items: center;
     gap: 2rem;
     margin-top: 2rem;
-    flex-wrap: wrap;
 }
 
 .scoreBoard{
@@ -80,4 +80,10 @@ img{
 #p{
     font-size: 27px;
     padding: 5px;
+}
+.bg{
+    
+    
+    
+    
 }
